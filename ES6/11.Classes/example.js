@@ -72,7 +72,7 @@ class Es6Rectangle extends Es6Shape {
   }
 }
 
-class Es6Circle extends Es6Shape {    
+class Es6Circle extends Es6Shape {  
   constructor(id, x, y, radius){
     super(id, x, y);
     this.radius = radius;
@@ -86,4 +86,5 @@ class Es6Circle extends Es6Shape {
 let es6Circle = Es6Circle.getCircle();
 
 let shape = new Es6Shape('new shape1', 10, 20);
-shape.id = 'new id';
+shape.id('new id');
+conslole.log(shape.id());
